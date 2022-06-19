@@ -69,10 +69,10 @@ then
     echo "Building Root APK"
     java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar --install \
                                -a com.google.android.youtube.apk -o build/revanced-root.apk
-    echo "Building Non-root APK"
-    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar --install \
-                               $available_patches \
-                               -a com.google.android.youtube.apk -o build/revanced-nonroot.apk
+#    echo "Building Non-root APK"
+#    java -jar revanced-cli.jar -m revanced-integrations.apk -b revanced-patches.jar --install \
+#                               $available_patches \
+#                               -a com.google.android.youtube.apk -o build/revanced-nonroot.apk
 else
     echo "Cannot find YouTube APK, skipping build"
 fi
